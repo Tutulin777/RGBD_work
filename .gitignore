@@ -1,0 +1,29 @@
+# Local environment, full dataset, caches and generated experiment runs.
+/.venv/
+/venv/
+/data/
+/cache/
+/runs/
+/work/
+/outputs/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+*.part
+# Trained models and large intermediate arrays are rebuilt locally.
+*.pt
+*.pth
+*.joblib
+*.npz
+*.zip
+# Local editor and authentication files.
+/.idea/
+/.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

@@ -1,0 +1,153 @@
+{
+  "source_run": "runs/main",
+  "kind": "previously completed real experiment, not demo output",
+  "seed": 42,
+  "classes": [
+    "apple",
+    "ball",
+    "banana",
+    "bell_pepper",
+    "binder",
+    "bowl",
+    "calculator",
+    "camera",
+    "cap",
+    "cell_phone"
+  ],
+  "split_protocol": "custom instance split: 1 test + 1 validation instance per class; remaining train",
+  "depth": {
+    "low_mm": 629.0,
+    "high_mm": 858.0,
+    "estimated_from": "train only"
+  },
+  "data_summary": {
+    "total_pairs_found": 41877,
+    "missing_depth": 0,
+    "missing_examples": [],
+    "selected_classes": [
+      "apple",
+      "ball",
+      "banana",
+      "bell_pepper",
+      "binder",
+      "bowl",
+      "calculator",
+      "camera",
+      "cap",
+      "cell_phone"
+    ],
+    "selected_samples": 4320,
+    "splits": {
+      "train": {
+        "frames": 2520,
+        "instances": 28
+      },
+      "val": {
+        "frames": 900,
+        "instances": 10
+      },
+      "test": {
+        "frames": 900,
+        "instances": 10
+      }
+    },
+    "per_class": {
+      "apple": {
+        "test": 90,
+        "val": 90,
+        "train": 270
+      },
+      "ball": {
+        "test": 90,
+        "val": 90,
+        "train": 450
+      },
+      "banana": {
+        "test": 90,
+        "val": 90,
+        "train": 180
+      },
+      "bell_pepper": {
+        "test": 90,
+        "val": 90,
+        "train": 360
+      },
+      "binder": {
+        "test": 90,
+        "val": 90,
+        "train": 90
+      },
+      "bowl": {
+        "test": 90,
+        "val": 90,
+        "train": 360
+      },
+      "calculator": {
+        "test": 90,
+        "val": 90,
+        "train": 270
+      },
+      "camera": {
+        "test": 90,
+        "val": 90,
+        "train": 90
+      },
+      "cap": {
+        "test": 90,
+        "val": 90,
+        "train": 180
+      },
+      "cell_phone": {
+        "test": 90,
+        "val": 90,
+        "train": 270
+      }
+    }
+  },
+  "hyperparameters": {
+    "epochs": 40,
+    "head_lr": 0.003,
+    "head_batch_size": 128,
+    "weight_decay": 0.0001
+  },
+  "svm": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "gamma_grid": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "selected": {
+      "C": 1.0,
+      "gamma": 0.5,
+      "accuracy": 0.9155555555555556,
+      "macro_f1": 0.901373106060606
+    },
+    "selection": "max validation accuracy, then macro-F1; ties retain first grid candidate"
+  },
+  "original_model_sha256": {
+    "model.pt": "1190aa65de05c66ac2348e6665acfac35aeff73282b1b6b8311ff6afbea4257a",
+    "fusion.joblib": "07437a749d11a86c8f3d5f8b05d4ffd388947c9676f1d0d575307371c7096473"
+  },
+  "original_training_sha256": "f839c7ae64081e3137d4b87901df9c44c249d2085392fd98672cf09d9532940f",
+  "training_source_sha256": {
+    "main.py": "457aeec703d2fb04e1e2f0ab5e65acd0905fdcc121853147f2e86629558abfaa",
+    "rgbd_data.py": "25d8115f8009a22497727b10c3155561812ba87b91247d3aec08d132e466432d",
+    "rgbd_models.py": "1b476a6c76c34c4d0ff004bfb70f5172ac9847f07c8a41848b309c06b7bac4fe",
+    "rgbd_experiment.py": "4ab7c850a1277ae04cd7c76ff9dec4873ea0777f63cc9371fb135aa476d83b1e",
+    "verify_results.py": "f01687c1f93e59725a864108cca9c66b53a7cefd3d5e11647496b21ff719a93d"
+  },
+  "snapshot_files_sha256": {
+    "comparison.png": "3ad85456a59a631f6da6ddb74b9582242114b596fbb00aaf4bab9e803830b2c6",
+    "confusion_matrices.png": "9cbff7a322a25ef75dc7c2c48841acd12421e2e8786336d4d5caf3b2a82c73a4",
+    "evaluation.json": "b5283473c1dfca080ebbde76556769c2811201a38995b94bd5094d414497afc0",
+    "metrics.csv": "f7850be7c24c9a490cb67e5dcd9f1d41b16757fae3a05f4982c2ff4ee4f90344",
+    "robustness.png": "71ceb561bdfa6144fe820f395d25c7d6b773aff0b1ae8873ed089a9d260ea0ac",
+    "verification.json": "4424e30039ef81d4e6e918c9ea44ffba15b34f3faca156b39aea77d26334634a"
+  }
+}

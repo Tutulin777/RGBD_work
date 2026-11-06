@@ -1,0 +1,84 @@
+{
+  "total_pairs_found": 41877,
+  "missing_depth": 0,
+  "missing_examples": [],
+  "selected_classes": [
+    "apple",
+    "ball",
+    "banana",
+    "bell_pepper",
+    "binder",
+    "bowl",
+    "calculator",
+    "camera",
+    "cap",
+    "cell_phone"
+  ],
+  "selected_samples": 4320,
+  "splits": {
+    "train": {
+      "frames": 2520,
+      "instances": 28
+    },
+    "val": {
+      "frames": 900,
+      "instances": 10
+    },
+    "test": {
+      "frames": 900,
+      "instances": 10
+    }
+  },
+  "per_class": {
+    "apple": {
+      "test": 90,
+      "val": 90,
+      "train": 270
+    },
+    "ball": {
+      "test": 90,
+      "val": 90,
+      "train": 450
+    },
+    "banana": {
+      "test": 90,
+      "val": 90,
+      "train": 180
+    },
+    "bell_pepper": {
+      "test": 90,
+      "val": 90,
+      "train": 360
+    },
+    "binder": {
+      "test": 90,
+      "val": 90,
+      "train": 90
+    },
+    "bowl": {
+      "test": 90,
+      "val": 90,
+      "train": 360
+    },
+    "calculator": {
+      "test": 90,
+      "val": 90,
+      "train": 270
+    },
+    "camera": {
+      "test": 90,
+      "val": 90,
+      "train": 90
+    },
+    "cap": {
+      "test": 90,
+      "val": 90,
+      "train": 180
+    },
+    "cell_phone": {
+      "test": 90,
+      "val": 90,
+      "train": 270
+    }
+  }
+}

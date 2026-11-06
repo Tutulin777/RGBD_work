@@ -1,0 +1,279 @@
+{
+  "source": "Washington RGB-D Object Dataset (evaluation set)",
+  "source_url": "https://rgbd-dataset.cs.washington.edu/",
+  "archive_url": "https://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_eval/rgbd-dataset_eval.zip",
+  "citation": "Kevin Lai, Liefeng Bo, Xiaofeng Ren, Dieter Fox. A Large-Scale Hierarchical Multi-View RGB-D Object Dataset. ICRA, 2011.",
+  "purpose": "18 original RGB/depth pairs for pipeline demonstration only; not the formal 10-class benchmark. Demo creates its own instance split.",
+  "pairs": [
+    {
+      "id": "apple_1_1_1",
+      "category": "apple",
+      "instance": "apple_1",
+      "rgb": {
+        "path": "samples/apple/apple_1/apple_1_1_1_crop.png",
+        "sha256": "5ee998edbae8f5c311d57e6cfd8c4487e47a915c9e305b425b2529eafe7b0357",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_1/apple_1_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_1/apple_1_1_1_depthcrop.png",
+        "sha256": "5dbfd2e2e0b5c0d50602ee714bfe251f728e1ada0c2a6c9e1cab339771d63135",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_1/apple_1_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "apple_1_4_196",
+      "category": "apple",
+      "instance": "apple_1",
+      "rgb": {
+        "path": "samples/apple/apple_1/apple_1_4_196_crop.png",
+        "sha256": "6284618dea3e4709ff9e91cfa7532a7f080be0c3a2fbc9c7ff4d935fc1ef7c8c",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_1/apple_1_4_196_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_1/apple_1_4_196_depthcrop.png",
+        "sha256": "2a34cbe9776bae442a07e38b775bd8a4903a3987b6530e556d45b31bbdd56640",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_1/apple_1_4_196_depthcrop.png"
+      }
+    },
+    {
+      "id": "apple_3_1_1",
+      "category": "apple",
+      "instance": "apple_3",
+      "rgb": {
+        "path": "samples/apple/apple_3/apple_3_1_1_crop.png",
+        "sha256": "56cf12621e97265ee9fbb798fa09a02f7fff74d37f03471ba64b27aac7ef8eb3",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_3/apple_3_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_3/apple_3_1_1_depthcrop.png",
+        "sha256": "1cbd2840a8e08d9f9fe698717dcb1c818bc5c0ddfc7d6f94b77dd88835b3d94c",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_3/apple_3_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "apple_3_4_196",
+      "category": "apple",
+      "instance": "apple_3",
+      "rgb": {
+        "path": "samples/apple/apple_3/apple_3_4_196_crop.png",
+        "sha256": "c1c40cfee2ed9238b7933dcfbfcd88e85c50f7b8fa659749b73cf3a1f14e941a",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_3/apple_3_4_196_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_3/apple_3_4_196_depthcrop.png",
+        "sha256": "2e4a4964a746b6e9e3bdcd0a80a9c103f368d18a835a1e4a240d6b7437e353a0",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_3/apple_3_4_196_depthcrop.png"
+      }
+    },
+    {
+      "id": "apple_5_1_1",
+      "category": "apple",
+      "instance": "apple_5",
+      "rgb": {
+        "path": "samples/apple/apple_5/apple_5_1_1_crop.png",
+        "sha256": "67a9f6f6be1dd940d5dafc1409add4ed9e6df99b74cf4ee63987f5a65e855b5e",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_5/apple_5_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_5/apple_5_1_1_depthcrop.png",
+        "sha256": "88304380f626e9b3b80926bb98f9a524ca8d1ba95c06852104a3b67fb1928f0a",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_5/apple_5_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "apple_5_4_221",
+      "category": "apple",
+      "instance": "apple_5",
+      "rgb": {
+        "path": "samples/apple/apple_5/apple_5_4_221_crop.png",
+        "sha256": "c988e51d99179efa3486f5df1ca110d862ba25ea826a9bb4e18bdca2761876a3",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_5/apple_5_4_221_crop.png"
+      },
+      "depth": {
+        "path": "samples/apple/apple_5/apple_5_4_221_depthcrop.png",
+        "sha256": "7f574dfbfeaea0cf7af62335313c796db9644a0719ecbf6ae5a50c209f5a5e4b",
+        "source_relative_path": "rgbd-dataset_eval/apple/apple_5/apple_5_4_221_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_1_1_1",
+      "category": "ball",
+      "instance": "ball_1",
+      "rgb": {
+        "path": "samples/ball/ball_1/ball_1_1_1_crop.png",
+        "sha256": "fea21930d5b870743448e2493aa2c9242a90ce67efeba3eebf2b26e276abcd8a",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_1/ball_1_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_1/ball_1_1_1_depthcrop.png",
+        "sha256": "5b8e9126b58979b1b918dbcb832f5c821418ebdca917fa2d79be2c898f9bb104",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_1/ball_1_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_1_4_256",
+      "category": "ball",
+      "instance": "ball_1",
+      "rgb": {
+        "path": "samples/ball/ball_1/ball_1_4_256_crop.png",
+        "sha256": "3627a32b7b929d3c3bbb9758a46620c487157bc76353ea47a7dc023f28466bc8",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_1/ball_1_4_256_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_1/ball_1_4_256_depthcrop.png",
+        "sha256": "eeb25d57e5e421416f218ecfbc5b39735109405ddbe25839cad65a64dbb06228",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_1/ball_1_4_256_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_7_1_1",
+      "category": "ball",
+      "instance": "ball_7",
+      "rgb": {
+        "path": "samples/ball/ball_7/ball_7_1_1_crop.png",
+        "sha256": "25ce9c4e478db1f59d61b3a8bae1b59c7f3d08cd3de065cc7d858142713d9f90",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_7/ball_7_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_7/ball_7_1_1_depthcrop.png",
+        "sha256": "b5b5042444ffc05fc4ec0987014aaa125c93d428843b2139c34e9b452f2fc329",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_7/ball_7_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_7_4_266",
+      "category": "ball",
+      "instance": "ball_7",
+      "rgb": {
+        "path": "samples/ball/ball_7/ball_7_4_266_crop.png",
+        "sha256": "72178d0eb91326c212e1d0f55116be8fde3c6be5bcf0ae2f6c008a2bf2a5e8a4",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_7/ball_7_4_266_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_7/ball_7_4_266_depthcrop.png",
+        "sha256": "0971a5e9aedf51e31344a6db298c57978d8de1c0102ceb85eec29b53a4da4b0d",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_7/ball_7_4_266_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_6_1_1",
+      "category": "ball",
+      "instance": "ball_6",
+      "rgb": {
+        "path": "samples/ball/ball_6/ball_6_1_1_crop.png",
+        "sha256": "162b097aef96a6aba4c6ccb5bcfa426ab8f4719bd6a06511515c24b9e024d504",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_6/ball_6_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_6/ball_6_1_1_depthcrop.png",
+        "sha256": "5e5ae6b74f972a777a5e7667224edeb7d6c66e30c63e2fe1694fbd887be27e4a",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_6/ball_6_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "ball_6_4_271",
+      "category": "ball",
+      "instance": "ball_6",
+      "rgb": {
+        "path": "samples/ball/ball_6/ball_6_4_271_crop.png",
+        "sha256": "dfe7960adcc2a0917a1371c6a20c2ab43f7437d7c46b4cdd58db271eaf0b985f",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_6/ball_6_4_271_crop.png"
+      },
+      "depth": {
+        "path": "samples/ball/ball_6/ball_6_4_271_depthcrop.png",
+        "sha256": "372ec1477773a073d1da76bd5b8b87f6620755c3c04a0e6dd05b24136653ed53",
+        "source_relative_path": "rgbd-dataset_eval/ball/ball_6/ball_6_4_271_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_1_1_1",
+      "category": "banana",
+      "instance": "banana_1",
+      "rgb": {
+        "path": "samples/banana/banana_1/banana_1_1_1_crop.png",
+        "sha256": "ba2fc3cefdee5d1b4b45a58a02064dd5117fe97e5e03e68041ee907e2151f5e3",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_1/banana_1_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_1/banana_1_1_1_depthcrop.png",
+        "sha256": "5c8bdaeed76e2b146587854b917313fddf8269cc973bb33dd2ef2147c52a1987",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_1/banana_1_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_1_4_266",
+      "category": "banana",
+      "instance": "banana_1",
+      "rgb": {
+        "path": "samples/banana/banana_1/banana_1_4_266_crop.png",
+        "sha256": "7be59f434b918fc1e388d322817bbd321b58fe5891d4fd33f9721110d4c8f307",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_1/banana_1_4_266_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_1/banana_1_4_266_depthcrop.png",
+        "sha256": "a5602d0edf4479291bb02a839df10fd88b166b71f97f0d7bdd22148b41d2e5b9",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_1/banana_1_4_266_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_4_1_1",
+      "category": "banana",
+      "instance": "banana_4",
+      "rgb": {
+        "path": "samples/banana/banana_4/banana_4_1_1_crop.png",
+        "sha256": "cb0b7e18372b258dce5ae5a5286f49d37ac7871bd14c8d98d23557fa82858657",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_4/banana_4_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_4/banana_4_1_1_depthcrop.png",
+        "sha256": "43ac5d7378c217e6e8568deb56c64f2e831ade74065a72fa2bcf756fcc7220a5",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_4/banana_4_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_4_4_246",
+      "category": "banana",
+      "instance": "banana_4",
+      "rgb": {
+        "path": "samples/banana/banana_4/banana_4_4_246_crop.png",
+        "sha256": "8cc59b01dd65a5a60c1869642a71c64edb3eb4440f5b57e0a6f541e9a3b366ab",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_4/banana_4_4_246_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_4/banana_4_4_246_depthcrop.png",
+        "sha256": "82900d09e783ab4bbdad90402d4a7387417d651a47f945ceb244cfec86e00de2",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_4/banana_4_4_246_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_3_1_1",
+      "category": "banana",
+      "instance": "banana_3",
+      "rgb": {
+        "path": "samples/banana/banana_3/banana_3_1_1_crop.png",
+        "sha256": "0744d21c004f5ccaf543e0693c0e07ad65f21151f25e4f5f2cd8c5fba5dad9b6",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_3/banana_3_1_1_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_3/banana_3_1_1_depthcrop.png",
+        "sha256": "6d8651348f6a0ea27d5074610461eb30ad4b748e57ba4aa30add9b6e19715ca3",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_3/banana_3_1_1_depthcrop.png"
+      }
+    },
+    {
+      "id": "banana_3_4_251",
+      "category": "banana",
+      "instance": "banana_3",
+      "rgb": {
+        "path": "samples/banana/banana_3/banana_3_4_251_crop.png",
+        "sha256": "f35326de3ced20a9ca15cc703e43eb098265fa43e59d72a1a13800512ce5a83e",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_3/banana_3_4_251_crop.png"
+      },
+      "depth": {
+        "path": "samples/banana/banana_3/banana_3_4_251_depthcrop.png",
+        "sha256": "bd2ea2513cf03f7979618268ac80d22f9af4dc7b85c49ed41258dda6852edadf",
+        "source_relative_path": "rgbd-dataset_eval/banana/banana_3/banana_3_4_251_depthcrop.png"
+      }
+    }
+  ]
+}

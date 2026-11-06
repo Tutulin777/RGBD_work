@@ -1,0 +1,134 @@
+[
+  {
+    "id": "apple_5_1_1",
+    "category": "apple",
+    "instance": "apple_5",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/apple/apple_5/apple_5_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/apple/apple_5/apple_5_1_1_depthcrop.png",
+    "label": 0,
+    "split": "test",
+    "rgb_shape": [
+      75,
+      81,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      75,
+      81
+    ],
+    "depth_dtype": "uint16"
+  },
+  {
+    "id": "ball_6_1_1",
+    "category": "ball",
+    "instance": "ball_6",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/ball/ball_6/ball_6_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/ball/ball_6/ball_6_1_1_depthcrop.png",
+    "label": 1,
+    "split": "test",
+    "rgb_shape": [
+      101,
+      110,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      101,
+      110
+    ],
+    "depth_dtype": "uint16"
+  },
+  {
+    "id": "banana_3_1_1",
+    "category": "banana",
+    "instance": "banana_3",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/banana/banana_3/banana_3_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/banana/banana_3/banana_3_1_1_depthcrop.png",
+    "label": 2,
+    "split": "test",
+    "rgb_shape": [
+      92,
+      173,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      92,
+      173
+    ],
+    "depth_dtype": "uint16"
+  },
+  {
+    "id": "bell_pepper_6_1_1",
+    "category": "bell_pepper",
+    "instance": "bell_pepper_6",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/bell_pepper/bell_pepper_6/bell_pepper_6_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/bell_pepper/bell_pepper_6/bell_pepper_6_1_1_depthcrop.png",
+    "label": 3,
+    "split": "test",
+    "rgb_shape": [
+      88,
+      105,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      88,
+      105
+    ],
+    "depth_dtype": "uint16"
+  },
+  {
+    "id": "binder_3_1_1",
+    "category": "binder",
+    "instance": "binder_3",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/binder/binder_3/binder_3_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/binder/binder_3/binder_3_1_1_depthcrop.png",
+    "label": 4,
+    "split": "test",
+    "rgb_shape": [
+      114,
+      298,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      114,
+      298
+    ],
+    "depth_dtype": "uint16"
+  },
+  {
+    "id": "bowl_2_1_1",
+    "category": "bowl",
+    "instance": "bowl_2",
+    "video": 1,
+    "frame": 1,
+    "rgb": "rgbd-dataset_eval/bowl/bowl_2/bowl_2_1_1_crop.png",
+    "depth": "rgbd-dataset_eval/bowl/bowl_2/bowl_2_1_1_depthcrop.png",
+    "label": 5,
+    "split": "test",
+    "rgb_shape": [
+      110,
+      171,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "depth_shape": [
+      110,
+      171
+    ],
+    "depth_dtype": "uint16"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "data": "F:\\RGBD_Fusion_Coursework\\data",
+  "seed": 42,
+  "max_classes": 10,
+  "max_frames": 90,
+  "epochs": 40,
+  "batch_size": 16
+}

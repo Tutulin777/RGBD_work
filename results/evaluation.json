@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "methods": [
+    "rgb",
+    "depth",
+    "average",
+    "additive_kernel"
+  ],
+  "conditions": 7,
+  "samples": 900,
+  "levels": [
+    0.0,
+    0.1,
+    0.3,
+    0.5
+  ],
+  "batch_size": 16,
+  "training_sha256": "f839c7ae64081e3137d4b87901df9c44c249d2085392fd98672cf09d9532940f",
+  "missing_policy": "Both fusion methods use the retained RGB linear classifier when depth is missing."
+}

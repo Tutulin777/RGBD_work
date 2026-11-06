@@ -1,0 +1,17 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Preserve recorded result hashes across platforms.
+results/*.json -text
+results/*.csv -text
+data/** -text
+cache/** -text
+runs/** -text

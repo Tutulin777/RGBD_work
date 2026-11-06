@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Disjoint instances, train-only normalization/kernel references, validation-selected models",
+    "28 metrics independently recalculated; all cached predictions and probabilities replayed",
+    "Exactly four methods; both fusion methods use the same RGB fallback",
+    "6 raw pairs replayed for clean and all RGB occlusion levels"
+  ],
+  "methods": [
+    "rgb",
+    "depth",
+    "average",
+    "additive_kernel"
+  ],
+  "metric_rows": 28,
+  "raw_sample_ids": [
+    "apple_5_1_1",
+    "ball_6_4_271",
+    "bell_pepper_6_4_226",
+    "bowl_2_4_206",
+    "camera_2_4_191",
+    "cell_phone_3_4_186"
+  ]
+}
