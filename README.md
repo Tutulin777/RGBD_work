@@ -2,7 +2,7 @@
 
 输入一对物体裁剪后的 RGB 图像与深度图，输出物体类别，并比较单模态识别和双模态融合效果。
 
-本项目使用 **ImageNet 预训练、冻结的 ResNet18** 提取特征，训练后续分类器。没有对 ResNet18 进行端到端微调，也没有实现 ViT 论文模型。
+本项目使用 **ImageNet 预训练、冻结的 ResNet18** 提取特征，训练后续分类器。
 
 | 方法 | 程序中的标识 | 实现 |
 |---|---|---|
@@ -15,7 +15,6 @@
 
 ## 1. 先看结果
 
-无需安装环境即可查看本仓库中的 [正式实验指标](results/metrics.csv)、[实验配置](results/experiment.json) 和 [原实验核查记录](results/verification.json)。这些文件是已完成实验的结果快照，不是小样本 demo 的成绩；模型文件不随仓库分发。
 
 | 方法 | 正常准确率 | 正常 Macro-F1 | RGB 遮挡 50% 时准确率 | 深度缺失 50% 时准确率 |
 |---|---:|---:|---:|---:|
@@ -28,9 +27,9 @@
 
 ![RGB 遮挡和深度缺失条件下的准确率](results/robustness.png)
 
-[查看混淆矩阵原图](results/confusion_matrices.png)。以上图像直接复制自程序输出。
+[查看混淆矩阵原图](results/confusion_matrices.png)。
 
-正式实验使用 Washington RGB-D Object Dataset 的 **10 类、48 个物体实例、4,320 对图像**。训练/验证/测试为 2,520/900/900 对，按实例隔离，随机种子为 42。这是自定义子集上的探索性课程实验，**不是全 51 类、官方十次划分的论文成绩**；此前测试表现已用于项目方案探索，也不作为全新的独立盲测。SVM 融合在正常输入下较好，但强 RGB 遮挡时单深度更好。不同方法的分类器也不同，不能把全部提升归因于融合公式。
+正式实验使用 Washington RGB-D Object Dataset 的 **10 类、48 个物体实例、4,320 对图像**。训练/验证/测试为 2,520/900/900 对，按实例隔离，随机种子为 42。
 
 ## 2. 环境与依赖
 
@@ -180,7 +179,6 @@ RGBD_Fusion_Coursework/
 └── .gitattributes              文本换行与二进制文件设置
 ```
 
-运行后生成 `.venv/`、`data/`、`cache/` 和 `runs/`，均不提交到 Git。
 
 | 阅读顺序 | 文件与接口 | 作用 |
 |---|---|---|
@@ -213,36 +211,10 @@ RGBD_Fusion_Coursework/
 - **迁移已有实验目录后路径失效**：manifest 保存了原数据根目录的绝对路径。建议在新机器用新 `--work` 重新准备和训练；本仓库不分发含本机路径的完整运行目录。
 - **扩大数据规模**：SVM 的训练核矩阵占用按训练样本数量的平方增长，全量运行前应评估内存。
 
-## 8. 推送 GitHub 与共享
 
-在 GitHub 创建空仓库，例如 `RGBD_Fusion_Coursework`，不要让 GitHub 自动创建 README 或其他初始化文件。根据课程要求选择公开或私有；私有仓库需要把组员和老师的 GitHub 账号加入协作者后才能访问。
+## 8. 数据与文献来源
 
-在项目根目录执行（替换远程地址中的 `YOUR_USERNAME`）：
-
-```powershell
-git init -b main
-git add .
-git status --short
-git diff --cached --stat
-```
-
-先检查暂存清单：应包含源代码、README、依赖与安装脚本、demo 小样本和根目录结果快照；不应包含 `.venv/`、完整 `data/`、`cache/`、`runs/`、模型权重、个人报告或密钥。`.gitignore` 已配置这些主要运行目录；如曾经跟踪过大文件，忽略规则不会自动取消跟踪，需要先处理原有 Git 记录。
-
-确认清单后执行：
-
-```powershell
-git commit -m "Prepare RGB-D coursework with demo and reproduction guide"
-git remote add origin https://github.com/YOUR_USERNAME/RGBD_Fusion_Coursework.git
-git push -u origin main
-```
-
-首次提交如提示身份未设置，按 Git 提示配置自己的用户名和邮箱。GitHub 登录使用凭据管理器或其他已配置的认证方式，不要把令牌写进源码、README 或远程 URL。仓库创建和推送完成后，向组员和老师分享仓库地址即可。
-
-本次整理仅准备本地可提交内容，没有创建 GitHub 仓库或执行远程推送。
-
-## 9. 数据与文献来源
-
-demo 图像来自 Washington RGB-D Object Dataset，原始数据的权利和使用要求归原作者；这里保留原始文件与来源记录，不为第三方数据另行授予许可。使用数据或引用结果时请注明：
+demo 图像来自 Washington RGB-D Object Dataset，原始数据的权利和使用要求归原作者；
 
 > Kevin Lai, Liefeng Bo, Xiaofeng Ren, Dieter Fox. A Large-Scale Hierarchical Multi-View RGB-D Object Dataset. ICRA, 2011.
 
